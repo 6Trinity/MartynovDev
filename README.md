@@ -1,0 +1,2 @@
+## My site
+Two years ago I graduated from college and got a degree in programming. Immediately after that I entered a university and got a job as a 1C programmer. But misfortune happened and my girlfriend left me. I quit my job, dropped out of school and spent 2 years in depression at home. Now, after long-term therapy, I decided to return to life and start coding. This site is my first attempt to start living anew.
