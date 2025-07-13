@@ -1,3 +1,6 @@
+@media (max-width: 768px) {
+    
+}
 body{
     font-family:"Roboto", "Arial", sans-serif;;
     background-color: black;
@@ -13,32 +16,38 @@ body{
 .AppHeader{
     font-family: "Bitcount Grid Double", system-ui;
     background-color:rgb(27, 27, 27);
-    justify-content: space-between;
+    justify-content: space-around;
+    box-sizing: border-box;
     align-items: center;
-    box-shadow: 1px 2px 2px #00d1bb;
     font-size: 1.5em;
+    overflow: hidden;
+    padding: 1%;
     flex: 0 1 auto;
     display: flex;
-    padding: 1rem;
-    height: 80px;
+    min-height: 80px;
+    flex-wrap: wrap;
 }
 .AppHeader-Menu{
-    justify-content: space-between;
     display: flex;
+    min-width: 628px;
 }
-.d-lg-flex-list-style-none{
-    list-style-type: none;
-    min-width: 900px;
-    margin-left: 50px;
-    max-width: 100%;
+.HeaderMenu-nav{
     justify-content: space-between;
+    list-style-type: none;
     display:flex;
-    border: #00d1bb solid;
+    gap: 5rem;
 }
-.HeaderMenu-nav-li{
-    margin: 0 1%;
+.HeaderMenu-nav-li > a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.HeaderMenu-nav-li > a:hover{
+    text-decoration: none;
+    color: #adadad;
 }
 footer{
     flex-shrink: 0;
 }
-
+.menu-toggle {
+  display: none;
+}
