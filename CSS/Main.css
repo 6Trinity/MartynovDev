@@ -22,14 +22,35 @@
         width: 100%;
         height: 2px;
         background-color: white;
-        transition: all 0.3s ease;
+        transition: all 0.5s ease;
         margin: 4px 0;
     }
-    .AppHeader-Menu{
+   .AppHeader-Menu {
         display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: rgb(20, 20, 20);
+        padding: 20px;
     }
-    .AppHeader {
-        position: relative;
+    .HeaderMenu-nav{
+        display:flex;
+        flex-direction: column;
+        list-style-type: none;
+    }
+    .AppHeader-Menu.active {
+        display: block;
+    }
+    .Button-menu.active .HeaderMenu-toggle-bar:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+    .Button-menu.active .HeaderMenu-toggle-bar:nth-child(2) {
+        opacity: 0;
+    }
+    .Button-menu.active .HeaderMenu-toggle-bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
     }
 }
 
@@ -58,6 +79,7 @@ body{
     padding: 1% 5%;
     height: 100px;
 }
+
 .HeaderMenu-nav{
     display:flex;
     justify-content: space-between;
@@ -66,15 +88,18 @@ body{
     margin: 0;
     padding: 0;
 }
+
 .HeaderMenu-nav-li > a{
     text-decoration: none;
     color: #ffffff;
 }
+
 .HeaderMenu-nav-li > a:hover{
     text-decoration: none;
     transition: all 0.3s ease;
     color: #adadad;
 }
+
 .Button-menu{
     display: none;
 }
