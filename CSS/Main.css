@@ -9,19 +9,13 @@
     }   
 }
 @media (max-width: 480px) {
-    .Button-menu{
-        display:flex !important;
-    }
-   .AppHeader-Menu {
-        display: none;
-    }
+
 }
 
 body{
-    font-family:"Roboto", "Arial", sans-serif;;
+    font: 2rem "Bitcount Grid Double", system-ui;
     background-color: black;
     color: #ffffff;
-    padding: 0;
     margin: 0;
 }
 
@@ -32,23 +26,24 @@ body{
 }
 
 .AppHeader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: "Bitcount Grid Double", system-ui;
-    background-color:rgb(27, 27, 27);
-    font-size: 1.5em;
+    padding: 15px ;
+    max-height: 100px;
+    background: rgb(27, 27, 27);
     box-sizing: border-box;
-    overflow: hidden;
-    padding: 1% 5%;
-    min-height: 100px;
 }
 
 .HeaderMenu-nav{
     display:flex;
     justify-content: space-between;
     list-style-type: none;
-    width: 600px;
+    width: 800px;
     margin: 0;
     padding: 0;
 }
@@ -59,9 +54,8 @@ a{
 }
 
 a:hover{
-    text-decoration: none;
     transition: all 0.3s ease;
-    color: #adadad;
+    color: #838383;
 }
 
 .Button-menu{
@@ -70,7 +64,7 @@ a:hover{
     display:none;
     justify-content: center;
     align-items: center;
-    background-color: rgb(27, 27, 27);
+    background: none;
     border: none;
     cursor: pointer;
     padding: 0;
@@ -106,8 +100,14 @@ a:hover{
 }
 .AppMain-Menu{
     display: none;
-    height: 90vh;
+    position: fixed;
+    top: 100px;
     width: 100%;
+    height: calc(100vh - 100px);
+    background: rgb(43, 43, 43);
+    border-radius: 45px 45px 0 0;
+    padding: 4%;
+    box-sizing: border-box;
 }
 .AppMain-Menu.active {
     display: block;
@@ -118,16 +118,11 @@ a:hover{
     background-color: rgb(43, 43, 43);
     flex-direction: column;
     list-style-type: none;
-    box-sizing: border-box;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    padding: 4%;
+    justify-content: space-around; 
+    padding: 0;
     margin: 0;
 }
-.MainMenu-nav-li{
-    font-family: "Bitcount Grid Double", system-ui;
-    font-size: 2rem;
-    margin: 5%;
+#myVideo{
+    padding-top: 100Px;
+    width: 100%;
 }
-
-
