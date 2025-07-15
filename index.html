@@ -7,11 +7,11 @@
     <link rel="icon" href="IMG/Favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
     <title>MartynovDev</title>
 </head>
 <body>
-    <script src="main.js"></script>
+    <script src="Script/main.js"></script>
     <div class="layout">
         <header class="AppHeader">
             <div class="AppHeader-logo">
@@ -19,32 +19,44 @@
             </div>
             <button class="Button-menu" aria-label="Toggle menu">
                 <span class="Button-content">
-                    <div class="HeaderMenu-toggle-bar"></div>
-                    <div class="HeaderMenu-toggle-bar"></div>
-                    <div class="HeaderMenu-toggle-bar"></div>
+                    <div class="Buttoncontent-toggle-bar"></div>
+                    <div class="Buttoncontent-toggle-bar"></div>
+                    <div class="Buttoncontent-toggle-bar"></div>
                 </span>
             </button>
             <nav class="AppHeader-Menu">
                 <ul class="HeaderMenu-nav">
-                    <li class="HeaderMenu-nav-li"><a href="#">Home</a></li>
-                    <li class="HeaderMenu-nav-li"><a href="#">About Us</a></li>
-                    <li class="HeaderMenu-nav-li"><a href="https://github.com/6Trinity">Project</a></li>
-                    <li class="HeaderMenu-nav-li"><a href="https://x.com/bigbabyban228">social</a></li>
+                    <li><a class="TextDedicated" href="#">Home</a></li>
+                    <li><a href="#MainContentInfo">About Us</a></li>
+                    <li><a href="https://github.com/6Trinity">Project</a></li>
+                    <li><a href="https://x.com/bigbabyban228">social</a></li>
                 </ul>
             </nav>
         </header>
         <div class="Main">
             <nav class="AppMain-Menu">
-                <ul class="MainMenu-nav">
-                    <li class="MainMenu-nav-li"><a href="#">Home</a></li>
-                    <li class="MainMenu-nav-li"><a href="#">About Us</a></li>
-                    <li class="MainMenu-nav-li"><a href="https://github.com/6Trinity">Project</a></li>
-                    <li class="MainMenu-nav-li"><a href="#">social</a></li>
+                <ul class="HeaderMenu-nav">
+                    <li><a class="TextDedicated" href="#">Home</a></li>
+                    <li><a href="#MainContentInfo">About Us</a></li>
+                    <li><a href="https://github.com/6Trinity">Project</a></li>
+                    <li><a href="#">social</a></li>
                 </ul>
             </nav>
-            <video autoplay muted loop id="myVideo">
-                <source src="IMG/181071372b58186cf93977378bb998e7.mp4" type="video/mp4">
-             </video>
+            <div class="MainContent">
+                <div class="MainContentInfo">
+                    <div class="MainContentInfotext">
+                        <h1>I'm Egor...</h1>
+                        <nav>
+                            <ul>
+                                <li class="MainMenu-nav-li">a beginner Full-stack developer and 1c developer from Russia</li>
+                                <li class="MainMenu-nav-li">I'm learning different technology stacks in search of most interesting for me</li>
+                                <li class="MainMenu-nav-li">I like web technologies, the process of creating interface and working with databases</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <img id="MainContentInfoImg" src="IMG/girl.png">
+                </div>
+            </div>
         </div>
         <footer></footer>
     </div>
