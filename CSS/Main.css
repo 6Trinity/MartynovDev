@@ -7,32 +7,42 @@
     .AppHeader-Menu{
         display: none;
     }   
+
     .HeaderMenu-nav{
         justify-content: space-around !important;
         flex-direction: column;
-        height: 100%;
         box-sizing: border-box;
         padding: 5% 10% !important;
+
+        height: 100%;
         width: auto;
     }
+
     .MainContentInfo{
-        font-size: 1em;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
+        padding: 0;
+
+        font-size: 1em;
     }
+    #MianPng{
+        width: 50%;
+}
 }
 
 /*Стили основных элементов*/
 body{
+    margin: 0;
+
     font: 2rem "Bebas Neue", sans-serif;
     background-color: rgb(27, 27, 27);;
     color: #ffffff;
-    margin: 0;
 }
 
 .layout{
     display: flex;
     flex-direction: column;
+
     height: 100vh;
 }
 
@@ -56,16 +66,21 @@ a:hover{
     justify-content: space-between;
     align-items: center;
     padding: 15px ;
+    z-index: 10;
+
     font: 2rem "Bitcount Grid Double", system-ui;
     max-height: 100px;
     background: rgb(27, 27, 27);
     box-sizing: border-box;
-    box-shadow: 0 0 0.5em #71e2eb;
+    box-shadow: 0 0 0.2em #397e83;
 }
 
 .HeaderMenu-nav{
     display:flex;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
     list-style-type: none;
     width: 800px;
     margin: 0;
@@ -74,32 +89,35 @@ a:hover{
 
 /*Стили кнопки*/
 .Button-menu{
-    width: 50px;
-    height: 50px;
     display:none;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    margin: 0;
+    
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0;
-    margin: 0;
+    width: 50px;
+    height: 50px;
 }
 
 .Button-content{
     display: flex;
     flex-direction: column;
     align-content: space-between;
+
     width: 60%;
     height: 60%;
 }
 
 .Buttoncontent-toggle-bar{
+    margin: 4px 0;
+
     width: 100%;
     height: 2px;
     background-color: white;
     transition: all 0.5s ease;
-    margin: 4px 0;
 }
 
 /*Анимация кнопки при нажатии*/
@@ -119,11 +137,13 @@ a:hover{
 .AppMain-Menu{
     display: none;
     position: fixed;
+    padding: 4%;  
+    z-index: 9; 
+
     width: 100%;
     height: calc(100vh - 100px);
-    background: rgb(43, 43, 43);
     border-radius: 45px 45px 0 0;
-    padding: 4%;
+    background: rgb(43, 43, 43);
     font: 2rem "Bitcount Grid Double", system-ui;
     box-sizing: border-box;
 }
@@ -132,36 +152,47 @@ a:hover{
     display: block;
 }
 
+/*Стили основного блока*/
 .Main{
     margin-top: 100px;
 }
+
+/*Стиль главного блока*/
 .MainContent{
     display: flex;
     flex-direction: column;
+
     color: black;
 }
+
 .MainContentInfo{
     display: flex;
-    min-height: calc(100vh - 100px);
     justify-content: space-around;
-    background: #397e83;
-    padding: 5%;
-    box-sizing: border-box;
+    margin: 2%;
+
+    min-height: calc(100vh - 200px);
     border-radius: 45px;
-    box-shadow: 0 0 0.5em #5b888b;
+    width: auto;
+    background: #397e83;
+    box-sizing: border-box;
+}
+.MainContentInfotext{
+    margin: 2% 2% 0 2%;
 }
 .TextDedicated{
     color: #397e83;
 }
-.MainMenu-nav-li{
-    margin-bottom: 2%;
+
+.MainContentInfoNav{
     padding: 1%;
-    background-color: #ececec;
-    box-shadow: 0 0 0.5em #5b888b;
-    list-style-type: none;
-    border-radius: 0 15%;
+    box-sizing: border-box;
+
+    background-color: white;
+    border-radius: 25px 25px 25px 0;
+    z-index: 2;
 }
-#MainContentInfoImg{
-    width: 38%;
-    height: 38%;
+
+#MianPng{
+    z-index: 1;
+    width: 20%;
 }
