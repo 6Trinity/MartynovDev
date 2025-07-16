@@ -3,6 +3,7 @@
     body{
         font-size: 1.5rem !important;
     }
+
     .Button-menu{
         display:flex !important;
     }
@@ -44,13 +45,26 @@
         margin-top: -75%;
     }
 
+   .Main-Skils > h1{
+        display: none;
+    }
+
+   .Skils-conteiner{
+        flex-direction: column;
+        padding: 5% !important;
+        align-content: space-between !important;
+    
+    }
+    .Skils-box{
+        width: 50px !important;
+    }
 }
 
 /*Стили основных элементов*/
 body{
     margin: 0;
 
-    background-color: #397e83;
+    background-color: #00D1BA;
     font: 2rem "Bebas Neue", sans-serif;
     color: #ffffff;
 }
@@ -197,7 +211,7 @@ a:hover{
     min-height: calc(100vh - 200px);
     border-radius: 45px;
     width: auto;
-    background: #2e6569;
+    background-color: #00b39e;
     box-sizing: border-box;
     box-shadow: inset 0 0 0.3em black;
 }
@@ -208,7 +222,7 @@ a:hover{
 }
 
 .TextDedicated{
-    color: #397e83;
+    color: #00ad99;
 }
 
 .Main-Content-Info-Nav{
@@ -243,15 +257,94 @@ h1,h2{
     font-style:italic;
     display: flex;
     text-shadow: 0 0 0.2em rgb(196, 209, 212);
+    margin-right: 1%;
 }
 
 .elfsight-app-b81da6f3-b510-436f-aa8c-27eddf3496dc{
-    margin-top: 5%;
     bottom: 0;
+    margin-bottom: 1%;
     position: absolute;
     z-index: 5;
 }
 
 p{
     color: white;
+}
+
+.Main-Skils-Info{
+    margin: 5% 2%;
+    display: flex;
+    flex-direction: row;
+
+    min-height: calc(100vh - 500px);
+}
+
+.Main-Skils{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1%;
+
+    width: 20%;
+    box-shadow: inset 0 0 0.3em black;
+    background-color: #00b39e;
+    background-image: url("https://misterbant.ru/wp-content/uploads/2018/07/Hatsune-Miku.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-radius: 45px;
+}
+
+.Skils-conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Skils-box{
+    margin: 3%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+
+    width: 60px;
+    box-shadow: inset 0 0 0.3em rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 15px;
+}
+
+.Bio-conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+
+    text-shadow: 0 0 0.3em rgb(0, 0, 0);
+    width: 100%;
+    font-size: 1.5rem;
+}
+.Bio-conteiner-1{
+    display: flex;
+    box-shadow: inset 0 0 0.3em black;
+    padding: 1%;
+    align-items: center;
+    box-sizing: border-box;
+
+    min-height: 20%;
+    width: 100%;
+    border-radius: 45px;
+    background-color: #00b39e;
+    margin-bottom: 2%;
+}
+.Bio-conteiner-2{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    height: 75%;
+
+    box-shadow: inset 0 0 0.3em black;
+    min-width: 100%;
+    box-sizing: border-box;
+    background-color: #00b39e;
+    border-radius: 45px;
 }
