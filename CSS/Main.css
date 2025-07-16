@@ -60,10 +60,11 @@
     }
 }
 
-/*Стили основных элементов*/
 body{
     margin: 0;
-
+    background-image: url("https://i.pinimg.com/736x/b9/09/ec/b909ec3e5f75c792894e1a591ad9dfef.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #00D1BA;
     font: 2rem "Bebas Neue", sans-serif;
     color: #ffffff;
@@ -90,7 +91,6 @@ a:hover{
     color: #838383;
 }
 
-/*Стили шапки сайта*/
 .AppHeader{
     position: fixed;
     top: 0;
@@ -124,7 +124,6 @@ a:hover{
     padding: 0;
 }
 
-/*Стили кнопки*/
 .Button-menu{
     display:none;
     justify-content: center;
@@ -157,7 +156,6 @@ a:hover{
     transition: all 0.5s ease;
 }
 
-/*Анимация кнопки при нажатии*/
 .Button-menu.active .Buttoncontent-toggle-bar:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
 }
@@ -170,7 +168,6 @@ a:hover{
     transform: translateY(-10px) rotate(-45deg);
 }
 
-/*Стили мобильного меню*/
 .AppMain-Menu{
     display: none;
     position: fixed;
@@ -189,12 +186,10 @@ a:hover{
     display: block;
 }
 
-/*Стили основного блока*/
 .AppMain{
     margin-top: 70px;
 }
 
-/*Стиль главного блока*/
 .AppMain-Content{
     display: flex;
     flex-direction: column;
@@ -211,7 +206,7 @@ a:hover{
     min-height: calc(100vh - 200px);
     border-radius: 45px;
     width: auto;
-    background-color: #00b39e;
+    background-color: #00D1BA;
     box-sizing: border-box;
     box-shadow: inset 0 0 0.3em black;
 }
@@ -271,8 +266,8 @@ p{
     color: white;
 }
 
-.Main-Skils-Info{
-    margin: 5% 2%;
+#Main-Skils-Info{
+    margin: 5% 0 5% 2%;
     display: flex;
     flex-direction: row;
 
@@ -287,7 +282,7 @@ p{
 
     width: 20%;
     box-shadow: inset 0 0 0.3em black;
-    background-color: #00b39e;
+    background-color: #00D1BA;
     background-image: url("https://misterbant.ru/wp-content/uploads/2018/07/Hatsune-Miku.png");
     background-repeat: no-repeat;
     background-position: bottom;
@@ -323,6 +318,7 @@ p{
     width: 100%;
     font-size: 1.5rem;
 }
+
 .Bio-conteiner-1{
     display: flex;
     box-shadow: inset 0 0 0.3em black;
@@ -333,9 +329,10 @@ p{
     min-height: 20%;
     width: 100%;
     border-radius: 45px;
-    background-color: #00b39e;
+    background-color: #00D1BA;
     margin-bottom: 2%;
 }
+
 .Bio-conteiner-2{
     display: flex;
     flex-direction: column;
@@ -345,6 +342,17 @@ p{
     box-shadow: inset 0 0 0.3em black;
     min-width: 100%;
     box-sizing: border-box;
-    background-color: #00b39e;
+    background-color: #00D1BA;
     border-radius: 45px;
+}
+
+footer{
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 200px;
+    position: relative;
+    background: rgb(27, 27, 27);
 }
