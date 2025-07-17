@@ -52,11 +52,24 @@
    .Skils-conteiner{
         flex-direction: column;
         padding: 5% !important;
-        align-content: space-between !important;
+        height: 100%;
     
     }
+
     .Skils-box{
         width: 50px !important;
+    }
+
+    .Main-Project{
+        flex-direction: column;
+    }
+
+    .Bio-conteiner-1{
+        flex-direction: column !important;
+    }
+
+    .Project-box{
+        width: 90% !important;
     }
 }
 
@@ -69,6 +82,7 @@ body{
     font: 2rem "Bebas Neue", sans-serif;
     color: #ffffff;
 }
+
 
 .layout{
     display: flex;
@@ -206,9 +220,9 @@ a:hover{
     min-height: calc(100vh - 200px);
     border-radius: 45px;
     width: auto;
-    background-color: #00D1BA;
+    background: linear-gradient(to right, #00D1BA, #0695BF);
     box-sizing: border-box;
-    box-shadow: inset 0 0 0.3em black;
+    box-shadow: inset 0 0.2rem 0.5em black;
 }
 
 .Main-Content-Info-text{
@@ -248,6 +262,10 @@ a:hover{
     list-style-type:square;
 }
 
+h4{
+    margin-top: -6%;
+    text-shadow: 0 0.1rem 0.7rem black; ;
+}
 h1,h2{
     font-style:italic;
     display: flex;
@@ -281,8 +299,8 @@ p{
     padding: 1%;
 
     width: 20%;
-    box-shadow: inset 0 0 0.3em black;
-    background-color: #00D1BA;
+    box-shadow: inset 0 0.2rem 0.5em black;
+    background: linear-gradient(to right, #00D1BA, #0695BF);
     background-image: url("https://misterbant.ru/wp-content/uploads/2018/07/Hatsune-Miku.png");
     background-repeat: no-repeat;
     background-position: bottom;
@@ -321,15 +339,15 @@ p{
 
 .Bio-conteiner-1{
     display: flex;
-    box-shadow: inset 0 0 0.3em black;
-    padding: 1%;
+    box-shadow: inset 0 0.2rem 0.5em black;
+    padding: 2%;
     align-items: center;
     box-sizing: border-box;
 
     min-height: 20%;
     width: 100%;
     border-radius: 45px;
-    background-color: #00D1BA;
+    background: linear-gradient(to right, #00D1BA, #0695BF);
     margin-bottom: 2%;
 }
 
@@ -339,20 +357,55 @@ p{
     padding: 2%;
     height: 75%;
 
-    box-shadow: inset 0 0 0.3em black;
+    box-shadow: inset 0 0.2rem 0.5em black;
     min-width: 100%;
+    color: white;
     box-sizing: border-box;
-    background-color: #00D1BA;
+    background: linear-gradient(to right, #00D1BA, #0695BF);
     border-radius: 45px;
 }
 
-footer{
-    top: 0;
+.Bio-conteiner-2 > h1{
+    color: #000000;
+    margin-bottom: -2%;
+}
+
+#main-footer{
     left: 0;
     right: 0;
     display: flex;
+    min-width: auto;
     justify-content: center;
     min-height: 200px;
     position: relative;
     background: rgb(27, 27, 27);
+}
+
+.Project-box{
+    width: 45%;
+    font-size: 1.5rem;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 45px;
+    padding: 2%;
+    box-sizing: border-box;
+    box-shadow: inset 0 0.2rem 0.5em black;
+    background: linear-gradient(to right, #00D1BA, #0695BF);
+    align-items: center;
+}
+
+.Project-conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Project-box > img{
+    width: 80%;
+    border-radius: 25px;
+}
+
+.Main-Project-Info > h1{
+    margin-left: 45%;
 }
