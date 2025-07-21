@@ -2,155 +2,188 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/Main.css">
-    <link rel="icon" href="IMG/Favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Портфолио фронтенд-разработчика Egor Martynov">
+    <meta property="og:title" content="MartynovDev">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/icon/Favicon.ico">
     <title>MartynovDev</title>
 </head>
 <body>
-    <script src="Script/main.js"></script>
-    <div class="Layout">
-        <header class="AppHeader">
-            <div class="AppHeader-logo">
-                <img class="AppHeader-logo-image" src="IMG/Logo1.png">
+    <div class="layout">
+        <header class="appheader" id="appheader">
+            <div class="appheader-div-flex">
+                <a>
+                    <img class="appheader-logo" src="IMG/Logo1.png" loading="lazy" alt="Логотип MartynovDev">
+                </a>
+                <button class="button-menu" aria-label="Меню">
+                    <span class="button-label">
+                        <div class="button-toggle-bar"></div>
+                        <div class="button-toggle-bar"></div>
+                        <div class="button-toggle-bar"></div>
+                    </span>
+                </button>
+                <nav class="appheader-menu-nav">
+                    <ul class="appheader-menu-ul">
+                        <li class="appheadermenu-li"><a href="#">Home</a></li>
+                        <li class="appheadermenu-li"><a href="#section-block-bio">About us</a></li>
+                        <li class="appheadermenu-li"><a href="#footer">Social</a></li>
+                        <li class="appheadermenu-li"><a href="https://github.com/6Trinity">Project</a></li>
+                    </ul>
+                </nav>
             </div>
-            <button class="Button-menu" aria-label="Toggle menu">
-                <span class="Button-content">
-                    <div class="Buttoncontent-toggle-bar"></div>
-                    <div class="Buttoncontent-toggle-bar"></div>
-                    <div class="Buttoncontent-toggle-bar"></div>
-                </span>
-            </button>
-            <nav class="AppHeader-Menu">
-                <ul class="Menu-nav">
-                    <li><a class="TextDedicated" href="#">Home</a></li>
-                    <li><a href="#Main-Skils-Info">About Us</a></li>
-                    <li><a href="https://github.com/6Trinity">Project</a></li>
-                    <li><a href="#main-footer">social</a></li>
-                </ul>
-            </nav>
         </header>
-        <div class="AppMain">
-            <nav class="AppMain-Menu">
-                <ul class="Menu-nav">
-                    <li><a class="TextDedicated" href="#">Home</a></li>
-                    <li><a href="#Main-Skils-Info">About Us</a></li>
-                    <li><a href="https://github.com/6Trinity">Project</a></li>
-                    <li><a href="#main-footer">social</a></li>
-                </ul>
-            </nav>
-            <div class="AppMain-Content">
-                <div class="Main-Content-Info">
-                    <div class="Main-Content-Info-text">
-                        <h1>I'm Egor</h1>
-                        <h4>Beginner Full-stack developer...</h4>
-                        <nav class="Main-Content-Info-Nav">
-                            <ul>
-                                <li class="Main-Content-Info-Nav-li">a beginner Full-stack developer and 1c developer from Russia</li>
-                                <li class="Main-Content-Info-Nav-li">I'm learning different technology stacks in search of most interesting for me</li>
-                                <li class="Main-Content-Info-Nav-li">I like web technologies, the process of creating interface and working with databases</li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <img src="IMG/MainPngGirl.png" id="Main-Content-Info-png">
-                    <img src="IMG/fc66e30decabdef74f7e1a230fe82ab0.png" class="Main-Img-left">
+        <main>
+            <section class="appmain-section">
+                <div class="section-block" id="section-block-bio">
+                    <h2>I'm Egor<br>Beginner Web developer...</h2>
+                    <p>
+                        1C Developer & Emerging Full-Stack Specialist<br>From Chelyabinsk, Russia<br><br>
+                        As a certified 1C developer with commercial experience in ERP and accounting configurations, I bridge the gap between business logic and technical implementation.<br><br>
+                        I'm learning different technology stacks in search of most interesting for me<br><br>
+                        I like web technologies, the process of creating interface and working with databases
+                    </p>
                 </div>
-                <div id="Main-Skils-Info">
-                    <div class="Main-Skils">
-                        <h1>My Stack</h1>
-                        <div class="Skils-conteiner">
-                            <div class="Skils-box">
-                                <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/python/python-original-wordmark.svg">
-                            </div>
-                            <div class="Skils-box">
-                                <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/html5/html5-original-wordmark.svg">
-                            </div>
-                            <div class="Skils-box">
-                                <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/css3/css3-original-wordmark.svg">
-                            </div>
-                            <div class="Skils-box">
-                                <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/csharp/csharp-line.svg">
-                            </div>
-                            <div class="Skils-box">
-                                <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/sqlite/sqlite-original.svg">
-                            </div>
-                            <div class="Skils-box">
-                                <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/dot-net/dot-net-original-wordmark.svg">
-                            </div>
-                            <div class="Skils-box">
-                                <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/git/git-original-wordmark.svg">
-                            </div>
-                            <div class="Skils-box">
-                                <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/wordpress/wordpress-original.svg">
-                            </div>
-                            <div class="Skils-box">
-                                <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/figma/figma-original.svg">
-                            </div>
+                <img loading="lazy" alt="Хатсуне Мику" src="img/fc66e30decabdef74f7e1a230fe82ab0.png" id="section-block-bio-png">
+                <img loading="lazy" alt="Хатсуне Мику" src="img/MainPngGirl.png" id="MainPngGirl">
+            </section>
+            <section class="appmain-section">
+                <div class="section-block" id="section-block-stak">
+                    <h3>My Stack</h3>
+                    <div class="section-block-stak-div">
+                        <div>
+                            <img class="appheader-logo" loading="lazy" alt="логотип python" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/python/python-original-wordmark.svg">
                         </div>
-                    </div>
-                    <div class="Bio-conteiner">
-                        <div class="Bio-conteiner-1">
-                            <h1>Experience:</h1>
-                            <p>commercial development on 1C enterprise and work with a manufacturing enterprise</p>
+                        <div>
+                            <img class="appheader-logo" loading="lazy" alt="логотип html" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/html5/html5-original-wordmark.svg">
                         </div>
-                        <div class="Bio-conteiner-2">
-                            <h1>Abou us</h1>
-                            <p>
-                                Education: SUSU (2023), SUSU (correspondence course, Computer Science and VT, until 2030)
-                            </p>
-                            <p>
-                                Skills: C#: .NET 8/9, Visual Studio/VS Code, working with DB<br>
-                                Frontend: HTML, CSS, JS (base)<br>
-                                SQL: SQL Server, PostgreSQL, SQLite<br>
-                                1C: ERP, Accounting, UPP (standard/non-standard configurations)<br>
-                                Additional experience: C/C++, Kotlin, Unity, administration (Windows/Linux/Cisco)<br>
-                            </p>
-                            <p>Accent: Commercial experience with 1C, in-depth study of Frontend (JS, PHP, Node.js).</p>
+                        <div>
+                            <img class="appheader-logo" loading="lazy" alt="логотип css" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/css3/css3-original-wordmark.svg">
+                        </div>
+                        <div>
+                            <img class="appheader-logo" loading="lazy" alt="логотип c#" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/csharp/csharp-line.svg">
+                        </div>
+                        <div>
+                            <img class="appheader-logo" loading="lazy" alt="логотип sql lite" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/sqlite/sqlite-original.svg">
+                        </div>
+                        <div>
+                            <img class="appheader-logo" loading="lazy" alt="логотип dot.net" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/dot-net/dot-net-original-wordmark.svg">
+                        </div>
+                        <div>
+                            <img class="appheader-logo" loading="lazy" alt="логотип git" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/git/git-original-wordmark.svg">
+                        </div>
+                        <div>
+                            <img class="appheader-logo" loading="lazy" alt="логотип wordpress" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/wordpress/wordpress-original.svg">
+                        </div>
+                        <div>
+                            <img class="appheader-logo" loading="lazy" alt="логотип figma" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/figma/figma-original.svg">
                         </div>
                     </div>
                 </div>
-                <div class="Main-Project-Info">
+                <div class="section-block-info">
+                    <div class="section-block" id="section-block-info1">
+                        <h3>Experience:</h3>
+                        <p>
+                            My journey began began with 1C:Enterprise, 
+                            where I gained real commercial experience and 
+                            mastered: Setting up 1C:ERP, 1C:Accounting and 
+                            UPP configurations; Developing complex reports 
+                            and data exchange mechanisms; Integrating 1C 
+                            solutions with SQL databases (SQL Server/PostgreSQL)
+                        </p>
+                    </div>
+                    <div class="section-block" id="section-block-info2">
+                        <h3>About us</h3>
+                        <p>
+                            Education: SUSU (2023), SUSU (correspondence course, Computer Science and VT, until 2030)<br><br>
+                            Skills: C#: .NET 8/9, Visual Studio/VS Code, working with DB<br>
+                            Frontend: HTML, CSS, JS (base)<br>
+                            SQL: SQL Server, PostgreSQL, SQLite<br>
+                            1C: ERP, Accounting, UPP (standard/non-standard configurations)<br>
+                            Additional experience: C/C++, Kotlin, Unity, administration (Windows/Linux/Cisco)<br><br>
+
+                            Accent: Commercial experience with 1C, in-depth study of Frontend (JS, PHP, Node.js).
+                        </p>
+                    </div>
+                    <img src="img/Hatsune-Miku.png" loading="lazy" alt="Хатсуне Мику" id="Hatsune-Miku">
+                </div>
+            </section>
+            <section class="appmain-section">
+                <div class="appmain-section-project">
                     <h1>Project</h1>
-                    <div class="Project-conteiner">
-                        <div class="Project-box">
+                    <div class="section-block-project">
+                        <div class="section-block">
                             <h5>Real estate agency</h5>
-                            <img src="https://img.hhcdn.ru/photo/793075149.jpeg?t=1752857287&h=WpZSJprSqtwgHXKmpbi_Bw">
+                            <img loading="lazy" alt="изображние курсового проекта real estate agency" src="https://img.hhcdn.ru/photo/793075149.jpeg?t=1753139737&h=LNZ-Xg6ytkIB9AxOM-W4Qg">
                             <p>The project was created for educational purposes as 
-                                a course project in college! A desktop application 
-                                was made for a non-existent real estate agency for 
-                                the sale and rental of housing. During the creation 
-                                of the application, I studied the capabilities of C# 
-                                for working with databases via ADO.NET. A database 
-                                model was created on the skl server and connected 
-                                to the project in visual studio, written in C# The 
-                                interface part is written in the WPF framework (XAML). 
-                                To use it, you need to open it in Visual Studio, having 
-                                previously downloaded the archive and unpacked it.<br><br><a href="https://github.com/6Trinity/Real_estate_agency">github</a></p>
+                            a course project in college! A desktop application 
+                            was made for a non-existent real estate agency for 
+                            the sale and rental of housing. During the creation 
+                            of the application, I studied the capabilities of C# 
+                            for working with databases via ADO.NET. A database 
+                            model was created on the skl server and connected 
+                            to the project in visual studio, written in C# The 
+                            interface part is written in the WPF framework (XAML). 
+                            To use it, you need to open it in Visual Studio, having 
+                            previously downloaded the archive and unpacked it.<br><br><a href="https://github.com/6Trinity/Real_estate_agency">github</a>
+                            </p>
                         </div>
-                        <div class="Project-box">
+                        <div class="section-block">
                             <h5>Zodiac Signs</h5>
-                            <img src="https://img.hhcdn.ru/photo/793442428.png?t=1752857287&h=7eaGjDNQr-jgKq9NhIhPKQ">
-                            <p>Front of the site about zodiac signs and forecasts! Made for educational purposes to study HTML and CSS layout Later it is planned to make an adaptive layout<br><br><a href="https://github.com/6Trinity/Zodiac_Signs">github</a></p>
+                            <img loading="lazy" alt="Изображние страницы сайта знаки зодиака" src="https://img.hhcdn.ru/photo/793442428.png?t=1753153871&h=5afm8otECIMC5puBjA4vhg">
+                            <p>
+                            Front of the site about zodiac signs and forecasts! Made for educational purposes to study HTML and CSS layout Later it is planned to make an adaptive layout<br><br><a href="https://github.com/6Trinity/Zodiac_Signs">github</a>
+                            </p>
                         </div>
-                        <div class="Project-box">
+                        <div class="section-block">
                             <h5>1C Configuration Cargo Transportation</h5>
-                            <img src="https://img.hhcdn.ru/photo/793069910.png?t=1752857287&h=7EHM3JyH0cqbgcYwn-U0cw">
-                            <p>1C-configuration "Cargo transportation company" is developed to perform all sorts of 
-                                tasks and functions of transport companies engaged in cargo transportation, therefore 
-                                "Cargo transportation company" will be relevant at the present time.<br><br><a href="https://github.com/6Trinity/Recipe_Book_C">github</a></p>
+                            <img loading="lazy" alt="Окно дипломного проекта 1С" src="https://img.hhcdn.ru/photo/793069910.png?t=1753153871&h=JPU3HjrIvSvTqa7kIpdpEg">
+                            <p>
+                            1C-configuration "Cargo transportation company" is developed to perform all sorts of 
+                            tasks and functions of transport companies engaged in cargo transportation, therefore 
+                            "Cargo transportation company" will be relevant at the present time.
+                            </p>
                         </div>
                     </div>
                 </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="footer-case">
+                <section class="footer-section">
+                <div class="footer-section-div">
+                    <h2>Contacs</h2>
+                    <div class="footer-section-row">
+                        <img src="img/icon/phone.png" loading="lazy" title="phone" alt="phone">
+                        <a href="tel:+79090852040">+7 909 085 20-40</a>
+                    </div>
+                    <div class="footer-section-row">
+                        <img src="img/icon/email.png" loading="lazy" title="email" alt="email">
+                          <a href="mailto:bigbabyban228@gmail.com">bigbabyban228@gmail.com</a>
+                    </div>
+                </div>
+                <div class="footer-section-div">
+                    <h2>Social</h2>
+                    <div class="footer-section-row">
+                        <a href="https://t.me/@n30Nk1nG" title="telegram"><img src="img/icon/telegram.png" loading="lazy" alt="telegram"></a>
+                        <a href="https://www.linkedin.com/in/6trinity" title="linkedin"><img src="img/icon/linkedin.png" loading="lazy"alt="linkedin"></a>
+                        <a href="https://github.com/6Trinity" title="github"><img src="img/icon/github.png" loading="lazy" alt="github"></a>
+                        <a href="https://discord.com/users/496273213509074945" title="discord"><img src="img/icon/discord.png" loading="lazy" alt="discord"></a>
+                        <a href="https://steamcommunity.com/id/bigbabyban228/" title="steam"><img src="img/icon/steam.png" loading="lazy" alt="steam"></a>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-section">
+                <p>
+                    © 2025 Martynov | My first web site❤️
+                </p>
+            </section>
             </div>
-        </div>
-        <footer id="main-footer">
-            <script src="https://static.elfsight.com/platform/platform.js" async></script>
-            <div class="elfsight-app-b81da6f3-b510-436f-aa8c-27eddf3496dc" data-elfsight-app-lazy></div>
-            <p>Martynov 2025 (my first developed website)</p>
         </footer>
     </div>
+    <script src="script/main.js"></script>
 </body>
 </html>
