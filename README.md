@@ -5,4 +5,4 @@ I was depressed for a long time and abandoned layout for 2 years. This site is t
 
 The site is written in pure CSS with crutches and is my first business card in the front-end sphere.
 
-<img src="https://img.hhcdn.ru/photo/793557309.png?t=1752877356&h=VrmN0Z7fe4_SXXSuEnYXwg">
+<img src="https://img.hhcdn.ru/photo/793874990.png?t=1753219303&h=Ob9RBUBnu47GFDbTl9A5UA">
