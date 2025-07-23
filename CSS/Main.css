@@ -16,7 +16,9 @@ a[href] {
 }
 
 a[href]:hover,
-a[href]:focus { color: var(--color-main)}
+a[href]:focus { 
+    color: var(--color-main);
+}
 
 body{
     font: 1.5rem var(--font-main);
@@ -30,6 +32,7 @@ body{
     display: flex;
     flex-direction: column;
 } 
+
 
 main{ 
     margin-top: 80px; 
@@ -138,7 +141,13 @@ main{
 }
 
 .section-block > img{
-    width: 70%;
+    width: 50%;
+    border-radius: 25px;
+    transition:  0.3s ease;
+}
+
+.section-block > img:hover{
+    width: 51%;
 }
 
 .section-block-project{
