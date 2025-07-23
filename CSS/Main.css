@@ -16,7 +16,7 @@ a[href] {
 }
 
 a[href]:hover,
-a[href]:focus { 
+a[href]:focus{ 
     color: var(--color-main);
 }
 

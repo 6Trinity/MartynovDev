@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     const button = document.querySelector('.button-menu');
-    const buttonsub = document.getElementById('button-submenu');
     const menu = document.querySelector('.appheader-menu-nav');
-    const submenu = document.querySelector('.submenu-ul');
     const header = document.getElementById('appheader');
+    const subbutton = document.getElementById('button-submenu');
+    const submenu = document.querySelector('.submenu');
     const scrollThreshold = 10;
 
     const toggleBodyScroll = (enable) => {
@@ -19,10 +19,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function() {   
         this.classList.toggle('active');
         menu.classList.toggle('active');
         toggleBodyScroll(!menu.classList.contains('active'));
+    });
+
+    subbutton.addEventListener('click', function() {   
+        this.classList.toggle('active');
+        submenu.classList.toggle('active');
     });
 
     document.querySelectorAll('.appheader-menu-nav a').forEach(link => {

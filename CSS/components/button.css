@@ -40,11 +40,56 @@
     transform: translateY(-10px) rotate(-45deg);
 }
 
+#button-submenu{
+    display: flex;
+    align-items: center;
+    color: var(  --color-text);
+    text-shadow: var(  --textshadow-main);
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.submenu > li {
+    display: flex;
+}
+
+#button-submenu:hover{
+    color: var(--color-main);
+}
+
+@media (min-width: 1110px) {
+
+    #button-submenu:hover .submenu, .submenu:hover {
+        display: block;
+    }
+
+    #button-submenu:hover > img {
+        transition: transform  0.5s ease;
+        transform: rotate(90deg);
+    }
+}
+
 @media (max-width: 1110px){
 
     .button-menu{
-
         display: block;
+    }
 
+    #button-submenu{
+        justify-content: start;
+        margin-left: -5px;
+        align-items: start;
+    }
+
+    #button-submenu.active{
+        height: auto;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    #button-submenu.active > img {
+        display: none;
     }
 }
