@@ -1,40 +1,52 @@
 document.addEventListener('DOMContentLoaded', function() {
+
     const button = document.querySelector('.button-menu');
     const menu = document.querySelector('.appheader-menu-nav');
     const header = document.getElementById('appheader');
+    const subbutton = document.getElementById('button-submenu');
+    const submenu = document.querySelector('.submenu');
     const scrollThreshold = 10;
+
+    const toggleBodyScroll = (enable) => {
+        document.body.style.overflow = enable ? '' : 'hidden';
+    };
 
     window.addEventListener('scroll', () => {
         if (window.scrollY > scrollThreshold) {
             header.classList.add('scrolled');
-        } 
-        else {
+        } else {
             header.classList.remove('scrolled');
         }
     });
     
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function() {   
         this.classList.toggle('active');
         menu.classList.toggle('active');
-        
-
-        document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+        toggleBodyScroll(!menu.classList.contains('active'));
     });
-});
 
-document.querySelectorAll('.appheader-menu-nav a').forEach(link => {
-    link.addEventListener('click', (e) => {
+    subbutton.addEventListener('click', function() {   
+        this.classList.toggle('active');
+        submenu.classList.toggle('active');
+    });
 
-        document.querySelector('.appheader-menu-nav').classList.remove('active');
-        document.querySelector('.button-menu').classList.remove('active');
+    document.querySelectorAll('.appheader-menu-nav a').forEach(link => {
+        link.addEventListener('click', (e) => {
 
-        const targetId = link.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
+            menu.classList.remove('active');
+            button.classList.remove('active');
+            toggleBodyScroll(true);
+
+            const targetId = link.getAttribute('href');
+            if (targetId.startsWith('#')) {
+                e.preventDefault();
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
     });
 });
