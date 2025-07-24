@@ -86,10 +86,9 @@
     #button-submenu.active{
         height: auto;
         flex-direction: column;
-        gap: 2em;
     }
 
-    #button-submenu.active > img {
+    #button-submenu > img {
         display: none;
     }
 }
