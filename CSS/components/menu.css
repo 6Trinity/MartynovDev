@@ -1,4 +1,109 @@
+.menu-nav{
+    width: clamp(280px, 60%, 1000px);
+    color: var(--colortext-header);
+    text-shadow: var(--textshadow-main);
+    position: absolute;
+}
 
+.menu-box-ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    gap: 1em;
+}
+
+.menu-box-ul li{
+    display: flex;
+}
+
+.submenu-box-a{
+    display: flex;
+}
+
+.submenu-box-nav{
+    display: none;
+    position: absolute;
+}
+
+.menu-nav-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0.5rem;
+}
+
+@media (min-width: 1110px) {
+
+    .button-submenu:hover  img{
+        transition: transform  0.3s ease;
+        transform: rotate(90deg);
+    }
+
+    .button-submenu:hover .submenu-box-nav, .submenu-box-nav:hover{
+        margin-top: 230px;
+        width: clamp(150px, 20%, 400px);
+        display: flex; 
+        backdrop-filter: blur(0.3rem);
+        box-shadow: var(--shadow-main);
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 1110px){
+
+    .menu-nav{
+        transform: translateY(-20px);
+        top: 80px;
+        left: 0;
+        right: 0;
+        position: fixed;
+        z-index: 100;
+
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        text-shadow: none;
+        transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.5s ease;
+        border-radius: 25px 25px 0 0;
+        background-color: var(    --colortext-header);
+        height: calc(100vh - 80px);
+
+        overflow-y: auto;
+    }
+    .menu-nav a{
+        color: var(--colortext-main) !important;
+    }
+    .menu-box-ul{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 2em;
+        min-height: 100%;
+    }
+
+    .menu-nav-ul{
+        padding: 0;
+    }
+
+    .menu-nav.active{
+        
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    .submenu-box-nav{
+        display: none;
+    }
+    .submenu-box-nav.active {
+        display: flex;
+        position: relative;
+        font-size: 1.3rem;
+    }
+}
+
+
+/*
 .appheader-menu-nav{
     font-family: var(--font-header);
     width: clamp(280px, 90%, 1000px);
@@ -102,7 +207,7 @@
         font-size: 1.2rem;
         position: relative;
         box-shadow: none;
-        width: auto;
         top: 0;
     }
 }
+

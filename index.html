@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Портфолио фронтенд-разработчика Egor Martynov">
     <meta property="og:title" content="MartynovDev">
@@ -9,46 +9,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="CSS/Main.css">
     <link rel="icon" href="IMG/icon/Favicon.ico">
-    <title>MartynovDev</title>
+    <title>MartynovDev V2.0</title>
 </head>
 <body>
     <div class="layout">
+        <div class="theme-switcher">
+            <button class="button-switcher" data-theme="light" aria-label="Светлая тема">☀️</button>
+            <button class="button-switcher" data-theme="dark" aria-label="Тёмная тема">🌙</button>
+            <button class="button-switcher" data-theme="retro" aria-label="Ретро версия">🕹️</button>
+        </div>
         <header class="appheader" id="appheader">
-            <div class="appheader-div-flex">
-                <a>
-                    <img class="appheader-logo" src="IMG/Logo1.png" loading="lazy" alt="Логотип MartynovDev">
-                </a>
-                <button class="button-menu" aria-label="Меню">
-                    <span class="button-label">
+            <div class="appsection-appheader">
+                <div class="logo-box">
+                    <a>
+                        <img src="IMG/Logo1.png" class="logo-img">
+                    </a>
+                </div>
+                <nav class="menu-nav">
+                    <ul class="menu-box-ul">
+                        <li><a href="#appsection-box-bio">Home</a></li>
+                        <li><a href="#section-block-stak">About us</a></li>
+                        <li>
+                            <button class="button-submenu" id="button-submenu-social">
+                                <div class="submenu-box-a">
+                                    <a href="#appfooter">Social</a>
+                                    <img src="IMG/icon/submenu.png" class="img-icon">
+                                </div>
+                                <nav class="submenu-box-nav">
+                                    <ul class="menu-nav-ul">
+                                        <li><a href="https://t.me/@n30Nk1nG">Telegram</a></li>
+                                        <li><a href="https://www.linkedin.com/in/6trinity">LinkedIn</a></li>
+                                        <li><a href="https://github.com/6Trinity">GitHub</a></li>
+                                        <li><a href="https://discord.com/users/496273213509074945">Discord</a></li>
+                                        <li><a href="https://steamcommunity.com/id/bigbabyban228">Steam</a></li>              
+                                    </ul>
+                                </nav>
+                            </button>
+                        </li>
+                        <li><a href="#appmain-section-project">Project</a></li>
+                    </ul>
+                </nav>
+                <button class="button-menu" id="button-menu-header">
+                     <span class="button-label">
                         <div class="button-toggle-bar"></div>
                         <div class="button-toggle-bar"></div>
                         <div class="button-toggle-bar"></div>
                     </span>
                 </button>
-                <nav class="appheader-menu-nav">
-                    <ul class="appheader-menu-ul">
-                        <li class="appheadermenu-li"><a href="#section-block-bio">Home</a></li>
-                        <li class="appheadermenu-li"><a href="#section-block-stak">About us</a></li>
-                        <li class="appheadermenu-li">
-                            <button aria-label="Меню" class="button-menu" id="button-submenu"> Social
-                                <img src="IMG/icon/submenu.png">
-                                <ul class="submenu">
-                                    <li><a href="https://t.me/@n30Nk1nG">Telegram</a><img class="submenu-img" src="IMG/icon/telegram.png"></li>
-                                    <li><a href="https://www.linkedin.com/in/6trinity">LinkedIn</a><img class="submenu-img" src="IMG/icon/linkedin.png"></li>
-                                    <li><a href="https://github.com/6Trinity">GitHub</a><img class="submenu-img" src="IMG/icon/github.png"></li>
-                                    <li><a href="https://discord.com/users/496273213509074945">Discord</a><img class="submenu-img" src="IMG/icon/discord.png"></li>
-                                    <li><a href="https://steamcommunity.com/id/bigbabyban228">Steam</a><img class="submenu-img" src="IMG/icon/steam.png"></li>
-                                </ul>
-                            </button>
-                        </li>
-                        <li class="appheadermenu-li"><a href="#appmain-section-project">Project</a></li>
-                    </ul>
-                </nav>
             </div>
         </header>
-        <main>
-            <section class="appmain-section">
-                <div class="section-block" id="section-block-bio">
+        <main class="appmain" id="appmain">
+            <section class="appsection">
+                <div class="appsection-box" id="appsection-box-bio">
                     <h2>I'm Egor<br>Beginner Web developer...</h2>
                     <p>
                         1C Developer & Emerging Full-Stack Specialist<br>From Chelyabinsk, Russia<br><br>
@@ -57,44 +69,37 @@
                         I like web technologies, the process of creating interface and working with databases
                     </p>
                 </div>
-                <img loading="lazy" alt="Хатсуне Мику" src="IMG//fc66e30decabdef74f7e1a230fe82ab0.png" id="section-block-bio-png">
                 <img loading="lazy" alt="Хатсуне Мику" src="IMG//MainPngGirl.png" id="MainPngGirl">
             </section>
-            <section class="appmain-section">
-                <div class="section-block" id="section-block-stak">
-                    <h3>My Stack</h3>
+            <section class="appsection">
+                <div class="appsection-box" id="section-block-stak">
                     <div class="section-block-stak-div">
-                        <div>
+
                             <img class="appheader-logo" loading="lazy" alt="логотип python" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/python/python-original-wordmark.svg">
-                        </div>
-                        <div>
+
+
                             <img class="appheader-logo" loading="lazy" alt="логотип html" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/html5/html5-original-wordmark.svg">
-                        </div>
-                        <div>
+
+
                             <img class="appheader-logo" loading="lazy" alt="логотип css" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/css3/css3-original-wordmark.svg">
-                        </div>
-                        <div>
+
+
                             <img class="appheader-logo" loading="lazy" alt="логотип c#" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/csharp/csharp-line.svg">
-                        </div>
-                        <div>
+
                             <img class="appheader-logo" loading="lazy" alt="логотип sql lite" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/sqlite/sqlite-original.svg">
-                        </div>
-                        <div>
+
                             <img class="appheader-logo" loading="lazy" alt="логотип dot.net" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/dot-net/dot-net-original-wordmark.svg">
-                        </div>
-                        <div>
+
                             <img class="appheader-logo" loading="lazy" alt="логотип git" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/git/git-original-wordmark.svg">
-                        </div>
-                        <div>
+
                             <img class="appheader-logo" loading="lazy" alt="логотип wordpress" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/wordpress/wordpress-original.svg">
-                        </div>
-                        <div>
+
                             <img class="appheader-logo" loading="lazy" alt="логотип figma" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/figma/figma-original.svg">
-                        </div>
+
                     </div>
                 </div>
                 <div class="section-block-info">
-                    <div class="section-block" id="section-block-info1">
+                    <div class="appsection-box" id="section-block-info1">
                         <h3>Experience:</h3>
                         <p>
                             My journey began began with 1C:Enterprise, 
@@ -105,7 +110,7 @@
                             solutions with SQL databases (SQL Server/PostgreSQL)
                         </p>
                     </div>
-                    <div class="section-block" id="section-block-info2">
+                    <div class="appsection-box" id="section-block-info2">
                         <h3>About us</h3>
                         <p>
                             Education: SUSU (2023), SUSU (correspondence course, Computer Science and VT, until 2030)<br><br>
@@ -121,11 +126,15 @@
                     <img src="IMG//Hatsune-Miku.png" loading="lazy" alt="Хатсуне Мику" id="Hatsune-Miku">
                 </div>
             </section>
-            <section class="appmain-section">
+            <section class="appsection">
                 <div id="appmain-section-project">
-                    <h1>Project</h1>
+                    <div id="Project-hed">
+                        <div class="button-toggle-bar"></div>
+                        <h1>Project</h1>
+                        <div class="button-toggle-bar"></div>
+                    </div>
                     <div class="section-block-project">
-                        <div class="section-block">
+                        <div class="appsection-box">
                             <h5>Real estate agency</h5>
                             <img loading="lazy" alt="изображние курсового проекта real estate agency" src="IMG/rea.jpeg">
                             <p>The project was created for educational purposes as 
@@ -141,14 +150,14 @@
                             previously downloaded the archive and unpacked it.<br><br><a href="https://github.com/6Trinity/Real_estate_agency">github</a>
                             </p>
                         </div>
-                        <div class="section-block">
+                        <div class="appsection-box">
                             <h5>Zodiac Signs</h5>
                             <img loading="lazy" alt="Изображние страницы сайта знаки зодиака" src="IMG/zz.png">
                             <p>
                             Front of the site about zodiac signs and forecasts! Made for educational purposes to study HTML and CSS layout Later it is planned to make an adaptive layout<br><br><a href="https://github.com/6Trinity/Zodiac_Signs">github</a>
                             </p>
                         </div>
-                        <div class="section-block">
+                        <div class="appsection-box">
                             <h5>1C Configuration Cargo Transportation</h5>
                             <img loading="lazy" alt="Окно дипломного проекта 1С" src="IMG/gp.png">
                             <p>
@@ -161,7 +170,7 @@
                 </div>
             </section>
         </main>
-        <footer id="footer">
+        <footer class="appfooter" id="appfooter">
             <div class="footer-case">
                 <section class="footer-section">
                 <div class="footer-section-div">

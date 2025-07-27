@@ -8,6 +8,215 @@
 
 
 ul li,
+ol li { 
+    list-style-type: none;
+    display: flex;
+}
+
+a[href] { 
+  text-decoration: none;
+  color: var(--colortext-header);
+}
+
+a[href]:hover,
+a[href]:focus{ 
+    color: var(--color-main);
+}
+
+body{
+    font: var(--fontsize-main) var(--font-main);
+    background: var(--gradient-main);
+    color: var(--color-text);
+}
+
+.layout{
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+} 
+
+.appsection{
+    display: flex;
+    padding: var(--padding-main);
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    position: relative;
+
+    min-height: var(--hight-section);
+}
+
+.appsection-box{
+    z-index: 10;
+}
+
+.logo-img{
+    width: 50px;
+    filter: drop-shadow(0 0 10px var(--color-main)) brightness(1);
+}
+
+.logo-box{
+    position: absolute;
+    left: 0;
+    margin-left: 1rem;
+    width: 60px;
+}
+
+#MainPngGirl{
+    position: absolute;
+    top: 0;
+    margin-top: -100px;
+    right: 0;
+    z-index: 1;
+    width: 400px;
+}
+
+.appmain{
+    margin-top: 100px;
+}
+
+.img-icon{
+    filter: drop-shadow(0 0 0.3rem var(--colortext-main)) brightness(2);
+}
+
+.theme-switcher{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(0.3rem);
+    box-shadow: var(--shadow-main);
+    border-radius: 15px;
+    gap: 1rem;
+    bottom: 0;
+    padding: 0.5rem;
+    right: 0;
+    z-index: 100;
+}
+
+.button-switcher{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.appsection-box{
+    backdrop-filter: blur(0.3rem);
+    border-radius: 45px;
+    box-sizing: border-box;
+    padding: var(    --padding-main);
+    box-shadow: var(--shadow-main);
+}
+
+#appsection-box-bio{
+    height: clamp(250px, 30%, 1000px);
+    margin-top: 300px;
+    text-shadow: var(--textshadow-main);
+}
+
+.appheader-logo{
+    width: clamp(50px, 30%, 150px);
+}
+
+#section-block-stak{
+    width: clamp(100px, 20%, 800px);
+    min-height: 100%;
+    align-items: center;
+}
+
+#section-block-info1{
+    width: clamp(100px, 100%, 1600px);
+    min-height: 40%;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#section-block-info2{
+    width: clamp(100px, 100%, 1600px);
+    min-height: 55%;
+    align-items: center;
+}
+
+.section-block-info{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 1rem;
+    min-height: 100%;
+}
+
+#Hatsune-Miku{
+    position: absolute;
+    width: 70%;
+    bottom: 0;
+}
+
+.section-block-stak-div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.appmain-section-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-block-project .appsection-box  img{
+    width: 50%;
+    border-radius: 25px;
+}
+
+#Project-hed{
+    display: flex;
+    align-items: center;
+}
+
+#Project-hed .button-toggle-bar{
+    height: 8px;
+    margin: 20px;
+    background: var(    --color-main);
+}
+
+.section-block-project{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-block-project  .appsection-box{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 1010px){
+
+    #appsection-box-bio{
+        margin: 0;
+    }
+}
+
+@media (max-width: 400px){
+
+}
+
+
+/*
+@import url('./base/vars.css');
+@import url('./base/reset.css');
+@import url('./base/fonts.css');
+@import url('./components/button.css');
+@import url('./components/menu.css');
+@import url('./layouts/header.css');
+@import url('./layouts/footer.css');
+
+
+ul li,
 ol li { list-style-type: none }
 
 a[href] { 
