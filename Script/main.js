@@ -1,16 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    const button = document.querySelector('.button-menu');
-    const menu = document.querySelector('.appheader-menu-nav');
-    const header = document.getElementById('appheader');
-    const subbutton = document.getElementById('button-submenu');
-    const submenu = document.querySelector('.submenu');
+    const button = document.getElementById('button-menu-header');
+    const menu = document.querySelector('.menu-nav');
+    const header = document.querySelector('.appsection-appheader');
+    const subbutton = document.getElementById('button-submenu-social');
+    const submenu = document.querySelector('.submenu-box-nav');
     const scrollThreshold = 10;
+    const themeSwitcher = document.querySelector('.theme-switcher');
+    const savedTheme = localStorage.getItem('theme') || 'light';
 
     const toggleBodyScroll = (enable) => {
         document.body.style.overflow = enable ? '' : 'hidden';
     };
 
+    document.documentElement.setAttribute('data-theme', savedTheme);
+
+    themeSwitcher.addEventListener('click', (e) => {
+    if (e.target.tagName === 'BUTTON') {
+      const theme = e.target.dataset.theme;
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+    }
+    });
     window.addEventListener('scroll', () => {
         if (window.scrollY > scrollThreshold) {
             header.classList.add('scrolled');
@@ -30,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         submenu.classList.toggle('active');
     });
 
-    document.querySelectorAll('.appheader-menu-nav a').forEach(link => {
+    document.querySelectorAll('.menu-nav a').forEach(link => {
         link.addEventListener('click', (e) => {
 
             menu.classList.remove('active');

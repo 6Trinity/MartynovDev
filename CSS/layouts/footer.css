@@ -1,4 +1,4 @@
-footer{
+.appfooter{
     margin-top: 80px;
     flex-shrink: 1;
     min-height: 200px;
@@ -13,7 +13,7 @@ footer{
     bottom: 0;
 
     font: var(--font-accent);
-    background: var(--color-header);
+    background: var(    --color-main);
 }
 
 .footer-section{
