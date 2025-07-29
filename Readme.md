@@ -7,17 +7,17 @@ I struggled with this disease for 2 years, and after a long therapy, I returned 
 I decided to start my return to life with a simple business card site, written completely from scratch.
 
 Briefly about what was done:
-⚫Added full adaptability for all device screen sizes
-⚫Completely redesigned color scheme and user-friendliness of the interface as a whole
-⚫Added change of design themes (light/night/classic)
-⚫The site structure was completely redesigned for the BEM system
-⚫Added many tactile elements for the user
-⚫Working with local storage and login are written in pure JS.
-⚫Created a mobile version of the project, which works great on any device up to iPhone 15
-⚫Created drop-down menus and a mobile menu
-⚫Worked with CSS semantics
-⚫Worked with media queries
-⚫This site is made in pure CSS and JS using BEM and is my calling card
+⚫Added full adaptability for all device screen sizes<br>
+⚫Completely redesigned color scheme and user-friendliness of the interface as a whole<br>
+⚫Added change of design themes (light/night/classic)<br>
+⚫The site structure was completely redesigned for the BEM system<br>
+⚫Added many tactile elements for the user<br>
+⚫Working with local storage and login are written in pure JS.<br>
+⚫Created a mobile version of the project, which works great on any device up to iPhone 15<br>
+⚫Created drop-down menus and a mobile menu<br>
+⚫Worked with CSS semantics<br>
+⚫Worked with media queries<br>
+⚫This site is made in pure CSS and JS using BEM and is my calling card<br>
 
 What was involved: CSS3, HTML5, JS, GIT
 
