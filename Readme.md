@@ -1,32 +1,73 @@
-## My business card site
-### Hello everyone 👋
+# React + TypeScript + Vite
 
-This project is my first serious website and the first project after two years of severe depression and attempts to take my own life.
-I struggled with this disease for 2 years, and after a long therapy, I returned to programming. Completely burned out, I am trying to find my own business, which would become my calling and meaning.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-I decided to start my return to life with a simple business card site, written completely from scratch.
+Currently, two official plugins are available:
 
-Briefly about what was done:
-⚫Added full adaptability for all device screen sizes<br>
-⚫Completely redesigned color scheme and user-friendliness of the interface as a whole<br>
-⚫Added change of design themes (light/night/classic)<br>
-⚫The site structure was completely redesigned for the BEM system<br>
-⚫Added many tactile elements for the user<br>
-⚫Working with local storage and login are written in pure JS.<br>
-⚫Created a mobile version of the project, which works great on any device up to iPhone 15<br>
-⚫Created drop-down menus and a mobile menu<br>
-⚫Worked with CSS semantics<br>
-⚫Worked with media queries<br>
-⚫This site is made in pure CSS and JS using BEM and is my calling card<br>
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-What was involved: CSS3, HTML5, JS, GIT
+## React Compiler
 
-This is how the site versions changed:
-#### V1.0
-<img src="IMG/1version.png">
+The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
 
-#### V2.0
-<img src="IMG/2version.png">
+## Expanding the ESLint configuration
 
-#### V3.0
-<img src="IMG/3version.png">
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
+
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
+
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
